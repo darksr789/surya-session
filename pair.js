@@ -157,7 +157,7 @@ await sock.sendMessage(
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: "120363391783584820@newsletter",
+        newsletterJid: "120363419670264413@newsletter",
         newsletterName: "❀༒★[ꜱᴜʀʏᴀ-x]★༒❀",
         serverMessageId: 143
       }
