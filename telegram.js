@@ -91,6 +91,9 @@ Get session via QR Code
 ❌ /cancel
 Stop current session
 
+👑 /owner
+Contact the owner
+
 _Include country code with number_
 _Example: /pair 917797099719_`,
             { parse_mode: "Markdown" }
@@ -422,6 +425,32 @@ _Waiting for you to link..._`,
     // ── /cancel ───────────────────────────────────────────────────
     bot.onText(/\/cancel/, (msg) => {
         bot.sendMessage(msg.chat.id, "✅ To cancel, simply start a new /pair or /qr command.");
+    });
+
+    // ── /owner ────────────────────────────────────────────────────
+    bot.onText(/\/owner/, (msg) => {
+        bot.sendMessage(msg.chat.id,
+`👑 *SURYA-X Owner*
+
+╔════════════════════◇
+║ ❍ Name   : *DARKSURYA Official*
+║ ❍ Number : *+917797099719*
+║ ❍ Telegram: @DARKSURYA\\_345
+╚════════════════════╝
+
+📩 Contact the owner directly:`,
+            {
+                parse_mode: "Markdown",
+                reply_markup: {
+                    inline_keyboard: [[
+                        {
+                            text: "📩 Contact Owner",
+                            url: "https://t.me/DARKSURYA_345"
+                        }
+                    ]]
+                }
+            }
+        );
     });
 
     bot.on("polling_error", (err) => {
