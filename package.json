@@ -26,6 +26,7 @@
     "pino": "9.5.0",
     "qrcode": "^1.5.4",
     "qrcode-terminal": "^0.12.0"
+    "node-telegram-bot-api": "^0.66.0"
   }
 }
 
