@@ -76,8 +76,8 @@ export function initTelegramBot() {
     bot.onText(/\/start/, (msg) => {
         bot.sendMessage(msg.chat.id,
 `╔════════════════════════╗
-║       *SURYA-X*         ║
-║  WHATSAPP BOT PAIRING   ║
+║     𝐒𝐔𝐑𝐘𝐀-𝐗            ║
+║  𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐏𝐀𝐈𝐑𝐈𝐍𝐆    ║
 ╚════════════════════════╝
 
 *Available Commands:*
