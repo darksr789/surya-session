@@ -77,7 +77,7 @@ export function initTelegramBot() {
         bot.sendMessage(msg.chat.id,
 `╔════════════════════════╗
 ║       *SURYA-X*         ║
-║    Session Linker       ║
+║  WHATSAPP BOT PAIRING   ║
 ╚════════════════════════╝
 
 *Available Commands:*
