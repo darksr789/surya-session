@@ -6,6 +6,7 @@ import path from "path";
 
 import pairRouter from "./pair.js";
 import qrRouter from "./qr.js";
+import { initTelegramBot } from "./telegram.js"; // ✅ ADD THIS
 
 const app = express();
 
@@ -39,6 +40,7 @@ app.use("/qr", qrRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  initTelegramBot(); // ✅ ADD THIS
 });
 
 export default app;
